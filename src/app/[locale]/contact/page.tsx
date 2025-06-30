@@ -271,16 +271,16 @@ export default function ContactPage() {
                       <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                         {info.label}
                       </h3>
-                        <a
-                          href={info.href}
+                      <a
+                        href={info.href}
                         className="text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors"
-                        >
-                          {info.value}
-                        </a>
+                      >
+                        {info.value}
+                      </a>
                     </div>
                   </div>
                 </motion.div>
-                ))}
+              ))}
             </div>
 
             <motion.div
@@ -305,23 +305,6 @@ export default function ContactPage() {
                   </a>
                 ))}
               </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              className="card p-6 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-900 border-slate-200 dark:border-slate-700"
-            >
-              <div className="flex items-center space-x-2 mb-3">
-                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-green-600 dark:text-green-400 font-medium text-sm">
-                  {t("available")}
-                  </span>
-              </div>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
-                {t("availableText")}
-                </p>
             </motion.div>
           </motion.div>
         </div>

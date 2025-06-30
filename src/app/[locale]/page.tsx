@@ -57,20 +57,10 @@ export default function Home() {
               className="space-y-8"
             >
               <div className="space-y-4">
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.2 }}
-                  className="inline-flex items-center space-x-2 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 px-5 py-2 rounded-full text-sm font-medium border border-green-200 dark:border-green-800"
-                >
-                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                  <span>{t("availability")}</span>
-                </motion.div>
-
                 <motion.h1
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.3 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
                   className="text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight"
                 >
                   {t("greeting")}{" "}
@@ -80,7 +70,7 @@ export default function Home() {
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.4 }}
+                  transition={{ duration: 0.6, delay: 0.3 }}
                   className="text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl"
                 >
                   {t("description")}
@@ -90,7 +80,7 @@ export default function Home() {
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.5 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
                 className="flex flex-col sm:flex-row gap-4"
               >
                 <Link
@@ -111,7 +101,7 @@ export default function Home() {
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.6 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
                 className="space-y-4"
               >
                 <p className="text-base font-medium text-gray-700 dark:text-gray-300">
@@ -123,7 +113,7 @@ export default function Home() {
                       key={skill}
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 0.3, delay: 0.7 + index * 0.1 }}
+                      transition={{ duration: 0.3, delay: 0.6 + index * 0.1 }}
                       className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-lg border border-gray-200 dark:border-gray-700"
                     >
                       {skill}

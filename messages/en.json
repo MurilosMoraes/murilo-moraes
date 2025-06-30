@@ -10,7 +10,6 @@
     "contact": "Contact"
   },
   "home": {
-    "availability": "Available for projects",
     "greeting": "Hello, I'm",
     "name": "Murilo Moraes",
     "description": "Front-end developer with over 5 years of experience in React, React Native and Next.js. Specialized in creating modern web and mobile applications for companies and startups.",
@@ -108,7 +107,6 @@
     "name": "Murilo Silva Moraes",
     "role": "Front-end Developer",
     "location": "Itapema, SC - Brazil",
-    "availability": "Available for projects",
     "education": "High School Graduate",
     "interests": "Interests",
     "myStory": "My Story",
@@ -145,8 +143,6 @@
     "phone": "Phone",
     "location": "Location",
     "social": "Social Media",
-    "available": "Available now",
-    "availableText": "I'm available for new projects and opportunities. Get in touch!",
     "form": {
       "title": "Send a Message",
       "name": "Name",

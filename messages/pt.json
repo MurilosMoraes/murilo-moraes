@@ -1,0 +1,207 @@
+{
+  "metadata": {
+    "title": "Murilo Silva Moraes - Desenvolvedor Front-end",
+    "description": "Portfólio de Murilo Silva Moraes, desenvolvedor Front-end especializado em React, React Native e Next.js com +5 anos de experiência."
+  },
+  "header": {
+    "home": "Home",
+    "projects": "Projetos",
+    "about": "Sobre",
+    "contact": "Contato"
+  },
+  "home": {
+    "availability": "Disponível para projetos",
+    "greeting": "Olá, eu sou o",
+    "name": "Murilo Moraes",
+    "description": "Desenvolvedor Front-end com mais de 5 anos de experiência em React, React Native e Next.js. Especializado em criar aplicações web e mobile modernas para empresas e startups.",
+    "viewProjects": "Ver Projetos",
+    "contact": "Entrar em Contato",
+    "techTitle": "Principais tecnologias:",
+    "stats": {
+      "experience": "Anos de Experiência",
+      "projects": "Projetos Completados",
+      "technologies": "Tecnologias Dominadas",
+      "companies": "Empresas Atendidas"
+    }
+  },
+  "projects": {
+    "title": "Meus Projetos",
+    "description": "Uma coleção dos meus trabalhos mais recentes, incluindo aplicações web, APIs e soluções inovadoras.",
+    "viewDemo": "Ver Demo",
+    "viewCode": "Ver Código",
+    "enterpriseProjects": "Projetos Empresariais",
+    "portfolioInProgress": "Portfólio em Construção",
+    "moreProjectsSoon": "Mais Projetos em Breve",
+    "addingProjects": "Estou documentando e adicionando mais projetos ao portfólio. Cada um terá sua página detalhada com tecnologias, desafios e aprendizados.",
+    "getInTouch": "Entre em Contato",
+    "featured": "Destaque",
+    "featuredProject": "Projeto em Destaque",
+    "featuredProjectDesc": "Confira meu projeto mais recente com 100% no Google Lighthouse",
+    "viewDetails": "Ver Detalhes",
+    "viewDetailsArrow": "Ver detalhes →",
+    "viewCodeTitle": "Ver código",
+    "viewProjectTitle": "Ver projeto",
+    "lighthouse": {
+      "perfectScore": "🎉 Pontuação Perfeita no Google Lighthouse!",
+      "description": "Este projeto alcançou a pontuação máxima de 100% em todas as métricas do Google Lighthouse, demonstrando excelência em performance, acessibilidade, boas práticas e SEO.",
+      "performance": "Performance",
+      "accessibility": "Acessibilidade",
+      "bestPractices": "Boas Práticas",
+      "seo": "SEO",
+      "badge": "100% Lighthouse"
+    },
+    "backToProjects": "Voltar aos Projetos",
+    "sections": {
+      "features": "Funcionalidades",
+      "challenges": "Desafios",
+      "learnings": "Aprendizados"
+    },
+    "fallbacks": {
+      "featuresNotAvailable": "Funcionalidades não disponíveis",
+      "challengesNotAvailable": "Desafios não disponíveis",
+      "learningsNotAvailable": "Aprendizados não disponíveis"
+    },
+    "cta": {
+      "title": "Interessado em um projeto similar?",
+      "description": "Posso desenvolver soluções personalizadas com a mesma qualidade e atenção aos detalhes. Entre em contato para discutirmos seu projeto!",
+      "contact": "Entre em Contato",
+      "viewOthers": "Ver Outros Projetos"
+    },
+    "portfolio": {
+      "title": "Portfólio Pessoal - Next.js 14",
+      "description": "🌐 Este é o site que você está navegando agora! Meu portfólio pessoal moderno desenvolvido com Next.js 14, TypeScript e Tailwind CSS, com sistema de internacionalização completo.",
+      "longDescription": "Este é meu portfólio pessoal atual, desenvolvido do zero com as tecnologias mais modernas do mercado. O projeto demonstra minhas habilidades técnicas através de uma aplicação real, funcional e otimizada. Alcançou 100% em todas as métricas do Google Lighthouse, demonstrando excelência em performance, acessibilidade, boas práticas e SEO.",
+      "features": {
+        "0": "Sistema completo de internacionalização (PT/EN/ES)",
+        "1": "Design responsivo e mobile-first",
+        "2": "Performance otimizada (100% Lighthouse)",
+        "3": "Dark mode com sistema de temas",
+        "4": "Animações suaves com Framer Motion",
+        "5": "SEO otimizado para múltiplos idiomas"
+      },
+      "challenges": {
+        "0": "Implementação de i18n complexa",
+        "1": "Otimização de performance avançada",
+        "2": "Configuração avançada do middleware",
+        "3": "Gerenciamento de estado entre idiomas",
+        "4": "SEO internacional e meta tags dinâmicas",
+        "5": "Estrutura de roteamento localizada"
+      },
+      "learnings": {
+        "0": "Domínio do Next.js 14 App Router",
+        "1": "Implementação profissional de i18n",
+        "2": "Melhores práticas de performance",
+        "3": "Técnicas avançadas de TypeScript",
+        "4": "Configuração de middleware complexo",
+        "5": "Gerenciamento de estado globalizado"
+      }
+    }
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "description": "Desenvolvedor apaixonado por tecnologia, sempre em busca de novos desafios e oportunidades para criar soluções inovadoras.",
+    "name": "Murilo Silva Moraes",
+    "role": "Desenvolvedor Front-end",
+    "location": "Itapema, SC - Brasil",
+    "availability": "Disponível para projetos",
+    "education": "Ensino Médio Completo",
+    "interests": "Interesses",
+    "myStory": "Minha História",
+    "experience": "Experiência Profissional",
+    "skills": "Habilidades Técnicas",
+    "bio": {
+      "paragraph1": "Sou um desenvolvedor Front-end com mais de 5 anos de experiência especializado em React, React Native, Next.js, TypeScript e Tailwind CSS. Minha jornada inclui atuação em projetos de grande porte, desde aplicações web e mobile até soluções full stack com Node.js e Firebase.",
+      "paragraph2": "Tenho experiência no setor público, fintechs, empresas internacionais e plataformas de entretenimento digital. Sou familiarizado com publicação mobile (EAS Build, TestFlight), deep linking, notificações e autenticação JWT/OAuth. Trabalho com times ágeis (Scrum/Kanban) e integro facilmente com squads técnicos e de produto.",
+      "paragraph3": "Localizado em Itapema/SC, estou sempre em busca de novos desafios e oportunidades para criar soluções inovadoras. Possuo inglês técnico para leitura e escrita em contexto de desenvolvimento."
+    },
+    "experience1": {
+      "title": "Desenvolvedor Front-end",
+      "period": "Mar/2022 - Atual",
+      "description": "Desenvolvimento de sistemas web e mobile com React, Next.js, Tailwind CSS e React Native. Atuação em plataformas de grande escala no setor de entretenimento digital, com foco em sistemas de afiliação e engajamento. Integração com autenticação OAuth, JWT e sistemas de métricas."
+    },
+    "experience2": {
+      "title": "Desenvolvedor Full Stack",
+      "period": "Jan/2021 - Mar/2022",
+      "description": "Desenvolvimento completo de soluções para a Prefeitura de Itapema/SC: App de trilhas ecológicas para turismo e Sistema de gestão de obras públicas. Responsável pela arquitetura, autenticação, integrações e infraestrutura front/back."
+    },
+    "experience3": {
+      "title": "Desenvolvedor Front-end (freelancer)",
+      "period": "Nov/2019 - Dez/2020",
+      "description": "Desenvolvimento de soluções customizadas para diversos clientes. Projetos de destaque: Sistema interno de controle para Electrolux durante a pandemia, 'Kiosk Go' para supermercados autônomos no mercado alemão, Front-end de fintech brasileira."
+    },
+    "interest1": "Tecnologias Emergentes",
+    "interest2": "Metodologias Ágeis",
+    "interest3": "Inovação Digital"
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "description": "Tem um projeto em mente ou quer apenas bater um papo? Ficarei feliz em conversar com você!",
+    "contactInfo": "Informações de Contato",
+    "phone": "Telefone",
+    "location": "Localização",
+    "social": "Redes Sociais",
+    "available": "Disponível agora",
+    "availableText": "Estou disponível para novos projetos e oportunidades. Entre em contato!",
+    "form": {
+      "title": "Envie uma Mensagem",
+      "name": "Nome",
+      "email": "Email",
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "send": "Enviar Mensagem",
+      "namePlaceholder": "Seu nome completo",
+      "emailPlaceholder": "seu@email.com",
+      "subjectPlaceholder": "Sobre o que você gostaria de conversar?",
+      "messagePlaceholder": "Descreva seu projeto ou dúvida...",
+      "success": "Mensagem enviada com sucesso! Retornarei em breve.",
+      "error": "Erro ao enviar mensagem. Tente novamente.",
+      "validation": {
+        "nameRequired": "Nome é obrigatório",
+        "nameMin": "Nome deve ter pelo menos 2 caracteres",
+        "emailRequired": "Email é obrigatório",
+        "emailInvalid": "Email inválido",
+        "subjectRequired": "Assunto é obrigatório",
+        "subjectMin": "Assunto deve ter pelo menos 5 caracteres",
+        "messageRequired": "Mensagem é obrigatória",
+        "messageMin": "Mensagem deve ter pelo menos 10 caracteres"
+      }
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "description": "Algumas das perguntas mais comuns que recebo",
+      "q1": {
+        "question": "Quais tipos de projeto você aceita?",
+        "answer": "Trabalho com desenvolvimento web full-stack, desde landing pages até aplicações complexas. Especializo-me em React, Next.js, Node.js e soluções em nuvem."
+      },
+      "q2": {
+        "question": "Qual é o prazo médio de entrega?",
+        "answer": "Depende da complexidade do projeto. Sites simples: 1-2 semanas. Aplicações mais complexas: 1-3 meses. Sempre discuto prazos realistas antes de começar."
+      },
+      "q3": {
+        "question": "Você oferece suporte pós-entrega?",
+        "answer": "Sim! Ofereço 30 dias de suporte gratuito para correções de bugs. Também disponibilizo planos de manutenção contínua para projetos maiores."
+      },
+      "q4": {
+        "question": "Como funciona o processo de trabalho?",
+        "answer": "1) Conversa inicial para entender suas necessidades, 2) Proposta e orçamento, 3) Pagamento de entrada, 4) Desenvolvimento com atualizações regulares, 5) Entrega e suporte."
+      }
+    }
+  },
+  "footer": {
+    "description": "Desenvolvedor Front-end com +5 anos de experiência em React, React Native, Next.js e tecnologias modernas.",
+    "quickLinks": "Links Rápidos",
+    "contact": "Contato",
+    "copyright": "Todos os direitos reservados."
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "close": "Fechar",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "yes": "Sim",
+    "no": "Não"
+  }
+}

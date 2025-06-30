@@ -52,12 +52,15 @@ export default function LanguageSelector() {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center space-x-2 p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+        className="flex items-center space-x-1 sm:space-x-2 p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
         aria-label="Select language"
       >
-        <GlobeAltIcon className="w-4 h-4 text-gray-600 dark:text-gray-400" />
+        <GlobeAltIcon className="hidden sm:block w-4 h-4 text-gray-600 dark:text-gray-400" />
         <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-          {currentLanguage?.flag} {currentLanguage?.code.toUpperCase()}
+          {currentLanguage?.flag}{" "}
+          <span className="hidden sm:inline">
+            {currentLanguage?.code.toUpperCase()}
+          </span>
         </span>
         <ChevronDownIcon
           className={`w-4 h-4 text-gray-600 dark:text-gray-400 transition-transform duration-200 ${
@@ -73,14 +76,14 @@ export default function LanguageSelector() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -10, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="absolute right-0 mt-2 w-40 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 z-50"
+            className="absolute right-0 mt-2 w-32 sm:w-40 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 z-50"
           >
             <div className="py-1">
               {languages.map((lang) => (
                 <button
                   key={lang.code}
                   onClick={() => handleLanguageChange(lang.code)}
-                  className={`w-full flex items-center space-x-3 px-4 py-2 text-sm transition-colors duration-200 ${
+                  className={`w-full flex items-center space-x-2 sm:space-x-3 px-3 sm:px-4 py-2 text-sm transition-colors duration-200 ${
                     locale === lang.code
                       ? "bg-slate-100 dark:bg-slate-700 text-slate-900 dark:text-slate-100"
                       : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
@@ -100,4 +103,3 @@ export default function LanguageSelector() {
     </div>
   );
 }
- 

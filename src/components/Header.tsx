@@ -38,8 +38,9 @@ export default function Header() {
                 &lt;/&gt;
               </span>
             </div>
-            <span className="text-xl font-bold gradient-text">
-              Murilo Moraes
+            <span className="text-lg sm:text-xl font-bold gradient-text">
+              <span className="hidden sm:inline">Murilo Moraes</span>
+              <span className="sm:hidden">MM</span>
             </span>
           </Link>
 
@@ -67,7 +68,7 @@ export default function Header() {
             ))}
           </div>
 
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 sm:space-x-4">
             <LanguageSelector />
             <button
               onClick={toggleTheme}
@@ -127,4 +128,3 @@ export default function Header() {
     </header>
   );
 }
- 

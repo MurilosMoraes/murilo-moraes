@@ -27,7 +27,6 @@
   "projects": {
     "title": "My Projects",
     "description": "A collection of my latest work, including web applications, APIs, and innovative solutions.",
-    "viewDemo": "View Demo",
     "viewCode": "View Code",
     "enterpriseProjects": "Enterprise Projects",
     "portfolioInProgress": "Portfolio Under Construction",

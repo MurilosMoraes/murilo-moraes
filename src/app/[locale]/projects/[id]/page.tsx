@@ -8,7 +8,6 @@ import Link from "next/link";
 import {
   ArrowLeftIcon,
   CodeBracketIcon,
-  ArrowTopRightOnSquareIcon,
   StarIcon,
   ChartBarIcon,
   CheckCircleIcon,
@@ -149,15 +148,6 @@ export default function ProjectDetail() {
               >
                 <CodeBracketIcon className="w-5 h-5 mr-2" />
                 {t("viewCode")}
-              </a>
-              <a
-                href={translatedProject.liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-secondary inline-flex items-center"
-              >
-                <ArrowTopRightOnSquareIcon className="w-5 h-5 mr-2" />
-                {t("viewDemo")}
               </a>
             </div>
           </motion.div>

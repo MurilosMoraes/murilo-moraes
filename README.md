@@ -2,6 +2,8 @@
 
 Portfólio pessoal desenvolvido com Next.js 14, TypeScript e sistema completo de internacionalização (PT/EN/ES). Demonstra expertise em desenvolvimento Front-end moderno com foco em performance, acessibilidade e experiência multilíngue.
 
+🌐 **Acesse o portfólio:** [https://murilo-moraes.vercel.app/](https://murilo-moraes.vercel.app/)
+
 ## 🌐 Funcionalidades
 
 - **Sistema de Internacionalização (i18n)** - Suporte completo para português, inglês e espanhol
@@ -118,5 +120,6 @@ O projeto suporta três idiomas:
 **Localização:** Itapema, SC - Brasil  
 **Email:** murilosilvamoraes@gmail.com  
 **Telefone:** (47) 9 9902-3880  
+**Portfólio:** [https://murilo-moraes.vercel.app/](https://murilo-moraes.vercel.app/)  
 **LinkedIn:** [linkedin.com/in/murilo-moraes-3a297222b](https://linkedin.com/in/murilo-moraes-3a297222b)  
 **GitHub:** [github.com/MurilosMoraes](https://github.com/MurilosMoraes)

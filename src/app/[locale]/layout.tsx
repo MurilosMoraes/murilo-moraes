@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/contexts/ThemeContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollEffect from "@/components/ScrollEffect";
+import { LazyMotionWrapper } from "@/components/LazyMotion";
 
 interface Props {
   children: React.ReactNode;
@@ -88,12 +89,14 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       <ThemeProvider>
-        <ScrollEffect />
-        <div className="min-h-screen flex flex-col relative z-10">
-          <Header />
-          <main className="flex-grow">{children}</main>
-          <Footer />
-        </div>
+        <LazyMotionWrapper>
+          <ScrollEffect />
+          <div className="min-h-screen flex flex-col relative z-10">
+            <Header />
+            <main className="flex-grow">{children}</main>
+            <Footer />
+          </div>
+        </LazyMotionWrapper>
       </ThemeProvider>
     </NextIntlClientProvider>
   );

@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations, useLocale } from "next-intl";
-import { motion } from "framer-motion";
+import { motion } from "@/components/LazyMotion";
 import Link from "next/link";
 import Image from "next/image";
 import {

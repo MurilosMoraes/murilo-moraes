@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion } from "@/components/LazyMotion";
 import { useForm } from "react-hook-form";
 import { useTranslations } from "next-intl";
 import {

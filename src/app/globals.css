@@ -2,6 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Performance optimizations */
+* {
+  font-display: swap;
+}
+
+/* Critical CSS - Above the fold */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prevent layout shift */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Dark mode performance */
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+/* Performance utilities */
+.gpu-accelerated {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Optimize animations */
+.optimize-animation {
+  contain: layout style paint;
+}
+
 @layer base {
   * {
     font-family: var(--font-inter), Inter, system-ui, sans-serif;
@@ -19,23 +75,23 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-slate-900 hover:bg-slate-800 dark:bg-slate-100 dark:hover:bg-slate-200 text-white dark:text-slate-900 font-medium py-3 px-6 rounded-lg transition-all duration-200;
+    @apply bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-6 py-3 rounded-lg font-medium hover:bg-slate-800 dark:hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-slate-900 dark:focus:ring-white focus:ring-offset-2;
   }
 
   .btn-secondary {
-    @apply bg-white dark:bg-gray-800 text-gray-900 dark:text-white border-2 border-gray-300 dark:border-gray-600 hover:border-slate-400 dark:hover:border-slate-500 font-medium py-3 px-6 rounded-lg transition-all duration-200;
+    @apply border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 px-6 py-3 rounded-lg font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-slate-900 dark:focus:ring-white focus:ring-offset-2;
   }
 
   .card {
-    @apply bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700;
+    @apply bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-lg transition-shadow duration-200;
   }
 
   .container-custom {
-    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-slate-700 to-slate-900 dark:from-slate-300 dark:to-slate-100 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent;
   }
 }
 
@@ -82,26 +138,22 @@
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none;
-    z-index: 0;
     background: radial-gradient(
-      1000px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-      rgba(100, 116, 139, 0.03) 0%,
-      rgba(100, 116, 139, 0.01) 50%,
-      transparent 80%
+      600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      rgba(148, 163, 184, 0.05),
+      transparent 40%
     );
-    opacity: 0.5;
-    transition: all 0.3s ease;
+    pointer-events: none;
+    z-index: 1;
+    transition: opacity 0.3s ease;
   }
 
   .dark .scroll-gradient-effect {
     background: radial-gradient(
-      1000px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-      rgba(148, 163, 184, 0.05) 0%,
-      rgba(148, 163, 184, 0.02) 50%,
-      transparent 80%
+      600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      rgba(148, 163, 184, 0.08),
+      transparent 40%
     );
-    opacity: 0.6;
   }
 
   .animate-enter {

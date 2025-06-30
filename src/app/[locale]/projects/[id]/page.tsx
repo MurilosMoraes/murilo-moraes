@@ -2,7 +2,7 @@
 
 import { useParams, useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+import { motion } from "@/components/LazyMotion";
 import Image from "next/image";
 import Link from "next/link";
 import {

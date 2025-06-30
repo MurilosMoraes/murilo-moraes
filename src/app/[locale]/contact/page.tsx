@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "@/components/LazyMotion";
+import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { useTranslations } from "next-intl";
 import {
@@ -271,16 +271,16 @@ export default function ContactPage() {
                       <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                         {info.label}
                       </h3>
-                      <a
-                        href={info.href}
+                        <a
+                          href={info.href}
                         className="text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors"
-                      >
-                        {info.value}
-                      </a>
+                        >
+                          {info.value}
+                        </a>
                     </div>
                   </div>
                 </motion.div>
-              ))}
+                ))}
             </div>
 
             <motion.div
@@ -317,11 +317,11 @@ export default function ContactPage() {
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                 <span className="text-green-600 dark:text-green-400 font-medium text-sm">
                   {t("available")}
-                </span>
+                  </span>
               </div>
               <p className="text-gray-600 dark:text-gray-300 text-sm">
                 {t("availableText")}
-              </p>
+                </p>
             </motion.div>
           </motion.div>
         </div>

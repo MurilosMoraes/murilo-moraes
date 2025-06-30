@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "@/components/LazyMotion";
+import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import {
   CodeBracketIcon,
@@ -109,7 +109,7 @@ export default function AboutPage() {
             </motion.div>
           </motion.div>
 
-          <motion.div
+            <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -153,24 +153,24 @@ export default function AboutPage() {
                       </h3>
                       <span className="text-sm text-slate-600 dark:text-slate-400 font-medium">
                         {exp.period}
-                      </span>
-                    </div>
+                        </span>
+                      </div>
                     <p className="text-slate-700 dark:text-slate-300 font-medium mb-3">
                       {exp.company}
                     </p>
                     <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                      {exp.description}
-                    </p>
+                        {exp.description}
+                      </p>
                     <div className="flex flex-wrap gap-2">
-                      {exp.technologies.map((tech) => (
-                        <span
-                          key={tech}
+                        {exp.technologies.map((tech) => (
+                          <span
+                            key={tech}
                           className="px-3 py-1 bg-slate-100 dark:bg-slate-800/50 text-slate-700 dark:text-slate-300 text-sm rounded-full font-medium"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
                   </motion.div>
                 ))}
               </div>
@@ -224,8 +224,8 @@ export default function AboutPage() {
                   </motion.div>
                 ))}
               </div>
-            </div>
-          </motion.div>
+              </div>
+            </motion.div>
         </div>
       </div>
     </div>

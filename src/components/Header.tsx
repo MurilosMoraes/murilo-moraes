@@ -11,7 +11,7 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import { motion, AnimatePresence } from "@/components/LazyMotion";
+import { motion, AnimatePresence } from "framer-motion";
 import LanguageSelector from "./LanguageSelector";
 
 export default function Header() {
@@ -127,3 +127,4 @@ export default function Header() {
     </header>
   );
 }
+ 

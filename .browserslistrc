@@ -1,4 +1,0 @@
-# Modern browsers only - reduces legacy JavaScript
-> 0.5%, last 2 versions, not dead, not ie 11
-supports es6-module
-supports es6-module-dynamic-import 

@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { useLocale } from "next-intl";
 import { ChevronDownIcon, GlobeAltIcon } from "@heroicons/react/24/outline";
-import { motion, AnimatePresence } from "@/components/LazyMotion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const languages = [
   { code: "pt", name: "Português", flag: "🇧🇷" },
@@ -100,3 +100,4 @@ export default function LanguageSelector() {
     </div>
   );
 }
+ 

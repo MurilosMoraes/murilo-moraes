@@ -40,7 +40,7 @@ export default function Header() {
             </div>
             <span className="text-lg sm:text-xl font-bold gradient-text">
               <span className="hidden sm:inline">Murilo Moraes</span>
-              <span className="sm:hidden">MM</span>
+              <span className="sm:hidden">Murilo</span>
             </span>
           </Link>
 

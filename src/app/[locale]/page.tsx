@@ -9,7 +9,6 @@ import {
   CodeBracketIcon,
   StarIcon,
   ChartBarIcon,
-  ArrowTopRightOnSquareIcon,
 } from "@heroicons/react/24/outline";
 import { projects, getTranslatedProject } from "@/data/projects";
 import PortfolioPreview from "@/components/PortfolioPreview";
@@ -181,27 +180,27 @@ export default function Home() {
       </section>
 
       {translatedFeaturedProject && (
-      <section className="py-20 bg-gray-50 dark:bg-gray-800">
-        <div className="container-custom">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+        <section className="py-20 bg-gray-50 dark:bg-gray-800">
+          <div className="container-custom">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
                 {tp("featuredProject")}
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+              </h2>
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                 {tp("featuredProjectDesc")}
-            </p>
-          </motion.div>
+              </p>
+            </motion.div>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
               className="max-w-4xl mx-auto"
             >
@@ -211,13 +210,13 @@ export default function Home() {
                     {translatedFeaturedProject.image === "portfolio-preview" ? (
                       <PortfolioPreview />
                     ) : (
-                  <Image
+                      <Image
                         src={translatedFeaturedProject.image}
                         alt={translatedFeaturedProject.title}
                         width={600}
                         height={400}
                         className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
+                      />
                     )}
 
                     <div className="absolute top-3 right-3 bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-xs font-medium flex items-center gap-1">
@@ -228,29 +227,29 @@ export default function Home() {
                     <div className="absolute top-3 left-3 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium flex items-center gap-1">
                       <ChartBarIcon className="w-3 h-3" />
                       100% Lighthouse
+                    </div>
                   </div>
-                </div>
 
                   <div className="space-y-6">
                     <div>
                       <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                         {translatedFeaturedProject.title}
-                </h3>
+                      </h3>
                       <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
                         {translatedFeaturedProject.description}
-                </p>
+                      </p>
                     </div>
 
                     <div className="flex flex-wrap gap-2">
                       {translatedFeaturedProject.tags.slice(0, 6).map((tag) => (
-                    <span
-                      key={tag}
+                        <span
+                          key={tag}
                           className="px-3 py-1 bg-slate-100 dark:bg-slate-800/50 text-slate-700 dark:text-slate-300 text-sm rounded font-medium"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
 
                     <div className="flex flex-col sm:flex-row gap-4">
                       <Link
@@ -260,33 +259,23 @@ export default function Home() {
                         {tp("viewDetails")}
                         <ChevronRightIcon className="w-5 h-5 ml-2" />
                       </Link>
-                      <div className="flex space-x-3">
-                    <a
-                          href={translatedFeaturedProject.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                          className="btn-secondary inline-flex items-center justify-center px-4"
-                          title={tp("viewCodeTitle")}
-                    >
-                      <CodeBracketIcon className="w-5 h-5" />
-                    </a>
-                    <a
-                          href={translatedFeaturedProject.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                          className="btn-secondary inline-flex items-center justify-center px-4"
-                          title={tp("viewProjectTitle")}
-                    >
-                      <ArrowTopRightOnSquareIcon className="w-5 h-5" />
-                    </a>
-                      </div>
+                      <a
+                        href={translatedFeaturedProject.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-secondary inline-flex items-center justify-center"
+                        title={tp("viewCodeTitle")}
+                      >
+                        <CodeBracketIcon className="w-5 h-5 mr-2" />
+                        {tp("viewCode")}
+                      </a>
                     </div>
                   </div>
                 </div>
-                </div>
-          </motion.div>
-        </div>
-      </section>
+              </div>
+            </motion.div>
+          </div>
+        </section>
       )}
     </div>
   );

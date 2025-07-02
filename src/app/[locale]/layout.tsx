@@ -41,12 +41,17 @@ export async function generateMetadata({
     icons: {
       icon: [
         {
+          url: "/favicon.ico",
+          sizes: "16x16",
+          type: "image/x-icon",
+        },
+        {
           url: "/favicon.png",
           sizes: "32x32",
           type: "image/png",
         },
       ],
-      shortcut: "/favicon.png",
+      shortcut: "/favicon.ico",
       apple: "/favicon.png",
     },
     openGraph: {

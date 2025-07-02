@@ -9,15 +9,9 @@ import {
   StarIcon,
   ChartBarIcon,
   InformationCircleIcon,
-  WrenchScrewdriverIcon,
   ChevronRightIcon,
 } from "@heroicons/react/24/outline";
-import {
-  projects,
-  ndaNotice,
-  projectsStatus,
-  getTranslatedProject,
-} from "@/data/projects";
+import { projects, ndaNotice, getTranslatedProject } from "@/data/projects";
 import PortfolioPreview from "@/components/PortfolioPreview";
 
 export default function Projects() {
@@ -26,8 +20,6 @@ export default function Projects() {
 
   const currentNdaNotice =
     ndaNotice[locale as keyof typeof ndaNotice] || ndaNotice.pt;
-  const currentProjectsStatus =
-    projectsStatus[locale as keyof typeof projectsStatus] || projectsStatus.pt;
 
   return (
     <div className="py-16 lg:py-20">
@@ -50,9 +42,9 @@ export default function Projects() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12"
+          className="mb-12"
         >
-          <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-6">
+          <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl p-6 max-w-2xl mx-auto">
             <div className="flex items-start space-x-3">
               <InformationCircleIcon className="w-6 h-6 text-blue-600 dark:text-blue-400 mt-1 flex-shrink-0" />
               <div>
@@ -61,20 +53,6 @@ export default function Projects() {
                 </h3>
                 <p className="text-blue-800 dark:text-blue-200 text-sm leading-relaxed">
                   {currentNdaNotice}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-6">
-            <div className="flex items-start space-x-3">
-              <WrenchScrewdriverIcon className="w-6 h-6 text-amber-600 dark:text-amber-400 mt-1 flex-shrink-0" />
-              <div>
-                <h3 className="font-semibold text-amber-900 dark:text-amber-100 mb-2">
-                  {t("portfolioInProgress")}
-                </h3>
-                <p className="text-amber-800 dark:text-amber-200 text-sm leading-relaxed">
-                  {currentProjectsStatus}
                 </p>
               </div>
             </div>
@@ -173,29 +151,6 @@ export default function Projects() {
             );
           })}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="mt-16 text-center"
-        >
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-8 border border-gray-200 dark:border-gray-700">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-              {t("moreProjectsSoon")}
-            </h2>
-            <p className="text-gray-600 dark:text-gray-300 mb-6">
-              {t("addingProjects")}
-            </p>
-            <Link
-              href={`/${locale}/contact`}
-              className="btn-primary inline-flex items-center"
-            >
-              {t("getInTouch")}
-              <ChevronRightIcon className="w-5 h-5 ml-2" />
-            </Link>
-          </div>
-        </motion.div>
       </div>
     </div>
   );

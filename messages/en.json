@@ -35,10 +35,12 @@
     "featured": "Featured",
     "featuredProject": "Featured Project",
     "featuredProjectDesc": "Check out my latest project with 100% on Google Lighthouse",
+    "featuredProjects": "Featured Projects",
+    "featuredProjectsDesc": "Check out some of my main projects developed with different technologies",
+    "viewAllProjects": "View All Projects",
     "viewDetails": "View Details",
     "viewDetailsArrow": "View details →",
     "viewCodeTitle": "View code",
-    "viewProjectTitle": "View project",
     "lighthouse": {
       "perfectScore": "🎉 Perfect Google Lighthouse Score!",
       "description": "This project achieved the maximum score of 100% in all Google Lighthouse metrics, demonstrating excellence in performance, accessibility, best practices and SEO.",
@@ -92,6 +94,122 @@
         "3": "Advanced TypeScript techniques",
         "4": "Complex middleware configuration",
         "5": "Global state management"
+      }
+    },
+    "digitalEazy": {
+      "title": "Digital Eazy - Digital Wallet",
+      "description": "💳 Digital wallet application developed with Ionic and Angular, offering a complete solution for mobile payments and financial management.",
+      "longDescription": "Digital Eazy was an innovative digital wallet project I developed using Ionic and Angular. The application offered a complete mobile financial management experience, including transfers, payments, transaction history, and secure authentication. The backend was built with Node.js and Firebase, ensuring scalability and security in financial transactions.",
+      "features": {
+        "0": "Secure payment and transfer system",
+        "1": "Biometric authentication and JWT",
+        "2": "Real-time financial dashboard with charts",
+        "3": "Payment gateway integration",
+        "4": "Detailed transaction history",
+        "5": "Push notifications for movements"
+      },
+      "challenges": {
+        "0": "Implementation of rigorous financial security",
+        "1": "Integration with multiple payment gateways",
+        "2": "Real-time transaction synchronization",
+        "3": "Security validations and compliance",
+        "4": "Optimization for different mobile devices",
+        "5": "Complex state management between screens"
+      },
+      "learnings": {
+        "0": "Development of secure financial applications",
+        "1": "Integration with payment systems",
+        "2": "Implementation of biometric authentication",
+        "3": "Microservices architecture with Node.js",
+        "4": "Sensitive data management",
+        "5": "Financial compliance and regulations"
+      }
+    },
+    "electroluxSystem": {
+      "title": "Electrolux Corporate System",
+      "description": "🏭 Internal system developed for Electrolux tablets during the pandemic, allowing employees to answer daily health and safety questionnaires.",
+      "longDescription": "During the pandemic, I developed a critical system for Electrolux that was installed on tablets distributed throughout the company. The system allowed employees to answer mandatory daily questionnaires about health and symptoms, contributing to internal sanitary control. Developed with Ionic and Angular, the system worked offline and synchronized data when connected, ensuring continuous operation even with network instabilities.",
+      "features": {
+        "0": "Configurable dynamic questionnaires",
+        "1": "Offline operation with synchronization",
+        "2": "Administrative dashboard for managers",
+        "3": "Compliance reports and statistics",
+        "4": "Internal notification system",
+        "5": "Interface optimized for corporate tablets"
+      },
+      "challenges": {
+        "0": "Development of critical system in record time",
+        "1": "Implementation of robust offline functionality",
+        "2": "Efficient batch data synchronization",
+        "3": "Interface adapted for corporate use",
+        "4": "Guarantee of 24/7 availability",
+        "5": "Integration with company legacy systems"
+      },
+      "learnings": {
+        "0": "Development of mission-critical systems",
+        "1": "Offline-first architecture for PWAs",
+        "2": "Data management in corporate environments",
+        "3": "Agile development under pressure",
+        "4": "Implementation of high availability systems",
+        "5": "Collaboration with corporate teams"
+      }
+    },
+    "koskGo": {
+      "title": "Kiosk Go - Autonomous Supermarket",
+      "description": "🛒 Revolutionary application for autonomous supermarkets in Germany, enabling queue-free shopping through advanced self-service technology.",
+      "longDescription": "Kiosk Go was an international project I developed for the German market, focused on revolutionizing the supermarket shopping experience. The application allowed users to scan products, make automatic payments, and leave without going through traditional checkouts. Using Ionic and Angular on the frontend, with Node.js and MongoDB backend, the system integrated with various European payment systems and offered a completely autonomous shopping experience.",
+      "features": {
+        "0": "Product scanner with barcode",
+        "1": "Integrated automatic payments",
+        "2": "Real-time virtual cart system",
+        "3": "Integration with multiple payment methods",
+        "4": "Product location in supermarket",
+        "5": "Loyalty and promotions system"
+      },
+      "challenges": {
+        "0": "Development for international market",
+        "1": "Integration with European regulations",
+        "2": "Multiple regional payment methods",
+        "3": "Real-time inventory synchronization",
+        "4": "Localization and translation to German",
+        "5": "Optimization for different device types"
+      },
+      "learnings": {
+        "0": "Development of international applications",
+        "1": "Integration with European payment systems",
+        "2": "GDPR regulations compliance",
+        "3": "E-commerce systems architecture",
+        "4": "Advanced application localization",
+        "5": "Remote project management"
+      }
+    },
+    "tocaki": {
+      "title": "TOCAKI - Musicians Platform",
+      "description": "🎵 Application that connects freelance musicians with establishments like bars and restaurants, facilitating bookings for live performances.",
+      "longDescription": "TOCAKI was an innovative platform I developed to connect freelance musicians with bar owners, restaurants, and other establishments. The application worked as a musical marketplace, where musicians could create profiles with their specialties, availability, and prices, while establishment owners could search and hire artists for events. Developed with Ionic and Angular, it included real-time chat system, geolocation, and rating system.",
+      "features": {
+        "0": "Marketplace for musicians and establishments",
+        "1": "Real-time chat system",
+        "2": "Geolocation to find nearby musicians",
+        "3": "Rating and feedback system",
+        "4": "Integrated availability calendar",
+        "5": "Payment and commission system"
+      },
+      "challenges": {
+        "0": "Development of bilateral marketplace",
+        "1": "Implementation of real-time chat",
+        "2": "Intelligent matching system",
+        "3": "Accurate and efficient geolocation",
+        "4": "Balancing interests between users",
+        "5": "Reputation and trust system"
+      },
+      "learnings": {
+        "0": "Marketplace and matching architecture",
+        "1": "Real-time chat implementation with Socket.io",
+        "2": "Advanced geolocation systems",
+        "3": "UX for bilateral platforms",
+        "4": "Marketplace application monetization",
+        "5": "Online community management"
       }
     }
   },

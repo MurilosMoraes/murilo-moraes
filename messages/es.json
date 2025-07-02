@@ -35,10 +35,12 @@
     "featured": "Destacado",
     "featuredProject": "Proyecto Destacado",
     "featuredProjectDesc": "Echa un vistazo a mi proyecto más reciente con 100% en Google Lighthouse",
+    "featuredProjects": "Proyectos Destacados",
+    "featuredProjectsDesc": "Echa un vistazo a algunos de mis principales proyectos desarrollados con diferentes tecnologías",
+    "viewAllProjects": "Ver Todos los Proyectos",
     "viewDetails": "Ver Detalles",
     "viewDetailsArrow": "Ver detalles →",
     "viewCodeTitle": "Ver código",
-    "viewProjectTitle": "Ver proyecto",
     "lighthouse": {
       "perfectScore": "🎉 ¡Puntuación Perfecta en Google Lighthouse!",
       "description": "Este proyecto alcanzó la puntuación máxima del 100% en todas las métricas de Google Lighthouse, demostrando excelencia en rendimiento, accesibilidad, buenas prácticas y SEO.",
@@ -92,6 +94,122 @@
         "3": "Técnicas avanzadas de TypeScript",
         "4": "Configuración de middleware complejo",
         "5": "Gestión de estado globalizada"
+      }
+    },
+    "digitalEazy": {
+      "title": "Digital Eazy - Billetera Digital",
+      "description": "💳 Aplicación de billetera digital desarrollada con Ionic y Angular, ofreciendo una solución completa para pagos móviles y gestión financiera.",
+      "longDescription": "Digital Eazy fue un proyecto innovador de billetera digital que desarrollé utilizando Ionic y Angular. La aplicación ofrecía una experiencia completa de gestión financiera móvil, incluyendo transferencias, pagos, historial de transacciones y autenticación segura. El backend fue construido con Node.js y Firebase, garantizando escalabilidad y seguridad en las transacciones financieras.",
+      "features": {
+        "0": "Sistema de pagos y transferencias seguras",
+        "1": "Autenticación biométrica y JWT",
+        "2": "Dashboard financiero con gráficos en tiempo real",
+        "3": "Integración con gateway de pago",
+        "4": "Historial detallado de transacciones",
+        "5": "Notificaciones push para movimientos"
+      },
+      "challenges": {
+        "0": "Implementación de seguridad financiera rigurosa",
+        "1": "Integración con múltiples gateways de pago",
+        "2": "Sincronización en tiempo real de transacciones",
+        "3": "Validaciones de seguridad y compliance",
+        "4": "Optimización para diferentes dispositivos móviles",
+        "5": "Gestión de estado complejo entre pantallas"
+      },
+      "learnings": {
+        "0": "Desarrollo de aplicaciones financieras seguras",
+        "1": "Integración con sistemas de pago",
+        "2": "Implementación de autenticación biométrica",
+        "3": "Arquitectura de microservicios con Node.js",
+        "4": "Gestión de datos sensibles",
+        "5": "Compliance y regulaciones financieras"
+      }
+    },
+    "electroluxSystem": {
+      "title": "Sistema Corporativo Electrolux",
+      "description": "🏭 Sistema interno desarrollado para tablets de Electrolux durante la pandemia, permitiendo a los empleados responder cuestionarios diarios de salud y seguridad.",
+      "longDescription": "Durante la pandemia, desarrollé un sistema crítico para Electrolux que fue instalado en tablets distribuidas por la empresa. El sistema permitía a los empleados responder cuestionarios diarios obligatorios sobre salud y síntomas, contribuyendo al control sanitario interno. Desarrollado con Ionic y Angular, el sistema funcionaba offline y sincronizaba datos cuando se conectaba, garantizando operación continua incluso con inestabilidades de red.",
+      "features": {
+        "0": "Cuestionarios dinámicos configurables",
+        "1": "Funcionamiento offline con sincronización",
+        "2": "Dashboard administrativo para gestores",
+        "3": "Reportes de compliance y estadísticas",
+        "4": "Sistema de notificaciones internas",
+        "5": "Interfaz optimizada para tablets corporativas"
+      },
+      "challenges": {
+        "0": "Desarrollo de sistema crítico en tiempo récord",
+        "1": "Implementación de funcionalidad offline robusta",
+        "2": "Sincronización eficiente de datos en lote",
+        "3": "Interfaz adaptada para uso corporativo",
+        "4": "Garantía de disponibilidad 24/7",
+        "5": "Integración con sistemas legacy de la empresa"
+      },
+      "learnings": {
+        "0": "Desarrollo de sistemas mission-critical",
+        "1": "Arquitectura offline-first para PWAs",
+        "2": "Gestión de datos en ambientes corporativos",
+        "3": "Desarrollo ágil bajo presión",
+        "4": "Implementación de sistemas de alta disponibilidad",
+        "5": "Colaboración con equipos corporativos"
+      }
+    },
+    "koskGo": {
+      "title": "Kiosk Go - Supermercado Autónomo",
+      "description": "🛒 Aplicación revolucionaria para supermercados autónomos en Alemania, permitiendo compras sin colas a través de tecnología de autoservicio avanzada.",
+      "longDescription": "Kiosk Go fue un proyecto internacional que desarrollé para el mercado alemán, enfocado en revolucionar la experiencia de compras en supermercados. La aplicación permitía a los usuarios escanear productos, realizar pagos automáticos y salir sin pasar por cajas tradicionales. Utilizando Ionic y Angular en el frontend, con backend en Node.js y MongoDB, el sistema se integraba con diversos sistemas de pago europeos y ofrecía una experiencia de compra completamente autónoma.",
+      "features": {
+        "0": "Scanner de productos con código de barras",
+        "1": "Pagos automáticos integrados",
+        "2": "Sistema de carrito virtual en tiempo real",
+        "3": "Integración con múltiples métodos de pago",
+        "4": "Localización de productos en supermercado",
+        "5": "Sistema de fidelidad y promociones"
+      },
+      "challenges": {
+        "0": "Desarrollo para mercado internacional",
+        "1": "Integración con regulaciones europeas",
+        "2": "Múltiples formas de pago regionales",
+        "3": "Sincronización de inventario en tiempo real",
+        "4": "Localización y traducción al alemán",
+        "5": "Optimización para diferentes tipos de dispositivos"
+      },
+      "learnings": {
+        "0": "Desarrollo de aplicaciones internacionales",
+        "1": "Integración con sistemas de pago europeos",
+        "2": "Compliance con regulaciones GDPR",
+        "3": "Arquitectura de sistemas de e-commerce",
+        "4": "Localización avanzada de aplicaciones",
+        "5": "Gestión de proyectos remotos"
+      }
+    },
+    "tocaki": {
+      "title": "TOCAKI - Plataforma para Músicos",
+      "description": "🎵 Aplicación que conecta músicos freelancers con establecimientos como bares y restaurantes, facilitando contrataciones para presentaciones en vivo.",
+      "longDescription": "TOCAKI fue una plataforma innovadora que desarrollé para conectar músicos freelancers con dueños de bares, restaurantes y otros establecimientos. La aplicación funcionaba como un marketplace musical, donde los músicos podían crear perfiles con sus especialidades, disponibilidad y precios, mientras los propietarios de establecimientos podían buscar y contratar artistas para eventos. Desarrollado con Ionic y Angular, incluía sistema de chat en tiempo real, geolocalización y sistema de evaluaciones.",
+      "features": {
+        "0": "Marketplace para músicos y establecimientos",
+        "1": "Sistema de chat en tiempo real",
+        "2": "Geolocalización para encontrar músicos cercanos",
+        "3": "Sistema de evaluaciones y feedbacks",
+        "4": "Calendario de disponibilidad integrado",
+        "5": "Sistema de pagos y comisiones"
+      },
+      "challenges": {
+        "0": "Desarrollo de marketplace bilateral",
+        "1": "Implementación de chat en tiempo real",
+        "2": "Sistema de matching inteligente",
+        "3": "Geolocalización precisa y eficiente",
+        "4": "Balanceo de intereses entre usuarios",
+        "5": "Sistema de reputación y confianza"
+      },
+      "learnings": {
+        "0": "Arquitectura de marketplace y matching",
+        "1": "Implementación de chat real-time con Socket.io",
+        "2": "Sistemas de geolocalización avanzados",
+        "3": "UX para plataformas bilaterales",
+        "4": "Monetización de aplicaciones marketplace",
+        "5": "Gestión de comunidades online"
       }
     }
   },

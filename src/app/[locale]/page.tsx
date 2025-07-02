@@ -18,10 +18,10 @@ export default function Home() {
   const tp = useTranslations("projects");
   const locale = useLocale();
 
-  const featuredProject = projects.find((project) => project.featured);
-  const translatedFeaturedProject = featuredProject
-    ? getTranslatedProject(featuredProject, tp)
-    : null;
+  const featuredProjects = projects.filter((project) => project.featured);
+  const translatedFeaturedProjects = featuredProjects.map((project) =>
+    getTranslatedProject(project, tp)
+  );
 
   const stats = [
     { label: t("stats.projects"), value: "50+" },
@@ -169,7 +169,7 @@ export default function Home() {
         </div>
       </section>
 
-      {translatedFeaturedProject && (
+      {translatedFeaturedProjects.length > 0 && (
         <section className="py-20 bg-gray-50 dark:bg-gray-800">
           <div className="container-custom">
             <motion.div
@@ -180,32 +180,36 @@ export default function Home() {
               className="text-center mb-16"
             >
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                {tp("featuredProject")}
+                Projetos em Destaque
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                {tp("featuredProjectDesc")}
+                Confira alguns dos meus principais projetos desenvolvidos com
+                diferentes tecnologias
               </p>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="max-w-4xl mx-auto"
-            >
-              <div className="card p-8 group hover:-translate-y-2 transition-all duration-300">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                  <div className="relative overflow-hidden rounded-xl">
-                    {translatedFeaturedProject.image === "portfolio-preview" ? (
-                      <PortfolioPreview />
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              {translatedFeaturedProjects.map((project, index) => (
+                <motion.div
+                  key={project.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="card group hover:-translate-y-2 transition-all duration-300 flex flex-col h-full"
+                >
+                  <div className="relative overflow-hidden rounded-t-xl">
+                    {project.image === "portfolio-preview" ? (
+                      <div className="h-48">
+                        <PortfolioPreview />
+                      </div>
                     ) : (
                       <Image
-                        src={translatedFeaturedProject.image}
-                        alt={translatedFeaturedProject.title}
-                        width={600}
-                        height={400}
-                        className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                        src={project.image}
+                        alt={project.title}
+                        width={400}
+                        height={300}
+                        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                       />
                     )}
 
@@ -214,55 +218,76 @@ export default function Home() {
                       {tp("featured")}
                     </div>
 
-                    <div className="absolute top-3 left-3 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium flex items-center gap-1">
-                      <ChartBarIcon className="w-3 h-3" />
-                      100% Lighthouse
-                    </div>
+                    {project.lighthouse.performance === 100 && (
+                      <div className="absolute top-3 left-3 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-medium flex items-center gap-1">
+                        <ChartBarIcon className="w-3 h-3" />
+                        100% Lighthouse
+                      </div>
+                    )}
                   </div>
 
-                  <div className="space-y-6">
-                    <div>
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                        {translatedFeaturedProject.title}
-                      </h3>
-                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-                        {translatedFeaturedProject.description}
-                      </p>
-                    </div>
+                  <div className="p-6 flex flex-col flex-1">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                      {project.title}
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-3">
+                      {project.description}
+                    </p>
 
-                    <div className="flex flex-wrap gap-2">
-                      {translatedFeaturedProject.tags.slice(0, 6).map((tag) => (
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {project.tags.slice(0, 3).map((tag) => (
                         <span
                           key={tag}
-                          className="px-3 py-1 bg-slate-100 dark:bg-slate-800/50 text-slate-700 dark:text-slate-300 text-sm rounded font-medium"
+                          className="px-2 py-1 bg-slate-100 dark:bg-slate-800/50 text-slate-700 dark:text-slate-300 text-xs rounded font-medium"
                         >
                           {tag}
                         </span>
                       ))}
+                      {project.tags.length > 3 && (
+                        <span className="px-2 py-1 bg-gray-100 dark:bg-gray-800/50 text-gray-500 dark:text-gray-400 text-xs rounded">
+                          +{project.tags.length - 3}
+                        </span>
+                      )}
                     </div>
 
-                    <div className="flex flex-col sm:flex-row gap-4">
-                      <Link
-                        href={`/${locale}/projects/${translatedFeaturedProject.id}`}
-                        className="btn-primary inline-flex items-center justify-center"
-                      >
-                        {tp("viewDetails")}
-                        <ChevronRightIcon className="w-5 h-5 ml-2" />
-                      </Link>
+                    <div className="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700 mt-auto">
                       <a
-                        href={translatedFeaturedProject.githubUrl}
+                        href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn-secondary inline-flex items-center justify-center"
+                        className="text-gray-600 dark:text-gray-400 hover:text-slate-700 dark:hover:text-slate-300 transition-colors"
                         title={tp("viewCodeTitle")}
                       >
-                        <CodeBracketIcon className="w-5 h-5 mr-2" />
-                        {tp("viewCode")}
+                        <CodeBracketIcon className="w-5 h-5" />
                       </a>
+
+                      <Link
+                        href={`/${locale}/projects/${project.id}`}
+                        className="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors inline-flex items-center gap-1"
+                      >
+                        {tp("viewDetails")}
+                        <ChevronRightIcon className="w-4 h-4" />
+                      </Link>
                     </div>
                   </div>
-                </div>
-              </div>
+                </motion.div>
+              ))}
+            </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="text-center mt-12"
+            >
+              <Link
+                href={`/${locale}/projects`}
+                className="btn-primary inline-flex items-center"
+              >
+                Ver Todos os Projetos
+                <ChevronRightIcon className="w-5 h-5 ml-2" />
+              </Link>
             </motion.div>
           </div>
         </section>

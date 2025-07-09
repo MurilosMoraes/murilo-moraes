@@ -127,15 +127,18 @@ export default function Projects() {
 
                   <div className="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700 mt-auto">
                     <div className="flex space-x-3">
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-600 dark:text-gray-400 hover:text-slate-700 dark:hover:text-slate-300 transition-colors"
-                        title={t("viewCodeTitle")}
-                      >
-                        <CodeBracketIcon className="w-5 h-5" />
-                      </a>
+                      {project.githubUrl &&
+                        project.id !== "electrolux-system" && (
+                          <a
+                            href={project.githubUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-600 dark:text-gray-400 hover:text-slate-700 dark:hover:text-slate-300 transition-colors"
+                            title={t("viewCodeTitle")}
+                          >
+                            <CodeBracketIcon className="w-5 h-5" />
+                          </a>
+                        )}
                     </div>
 
                     <Link

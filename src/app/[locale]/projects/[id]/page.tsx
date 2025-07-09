@@ -140,15 +140,17 @@ export default function ProjectDetail() {
             </div>
 
             <div className="flex space-x-4">
-              <a
-                href={translatedProject.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary inline-flex items-center"
-              >
-                <CodeBracketIcon className="w-5 h-5 mr-2" />
-                {t("viewCode")}
-              </a>
+              {project.githubUrl && project.id !== "electrolux-system" && (
+                <a
+                  href={translatedProject.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary inline-flex items-center"
+                >
+                  <CodeBracketIcon className="w-5 h-5 mr-2" />
+                  {t("viewCode")}
+                </a>
+              )}
             </div>
           </motion.div>
         </div>

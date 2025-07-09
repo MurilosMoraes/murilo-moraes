@@ -169,7 +169,7 @@ export const projects: Project[] = [
       "Offline Support",
       "Corporate",
     ],
-    githubUrl: "https://github.com/MurilosMoraes/Electrolux",
+    githubUrl: "",
     liveUrl: "#",
     featured: true,
     lighthouse: {
